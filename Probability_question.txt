@@ -1,0 +1,29 @@
+Answer: Probability that our prediction is correct is 0.7058824
+
+Solution:
+
+Using conditional probability formula: P(A|B)=(P(B|A)*P(A))/P(B)
+
+Given,
+P(x=0|y=2)=0.5
+P(x=0|y=3)=0.8
+P(y=2)=0.4
+P(y=3)=0.6
+
+
+Let P(x=0) be a  .................1
+
+Then, P(x=0|y=2)=(a*P(y=2|x=0))/0.4
+Or P(y=2|x=0)=0.2/a  .......................2
+
+We need to find P(y=3|x=0)
+We know P(y=3|x=0)=(P(x=0|y=3)*P(y=3))/P(x=0)
+Or P(y=3|x=0)=(0.8*0.6)/a  ..................from 1, Let's call this 3
+
+But y can only have value 2 or 3, thus sum of 2 and 3 should be 1
+So, we have (0.2/a)+((0.8*0.6)/a)=1
+Thus a=0.68 (Thus P(x=0) is 0.68)
+
+So from 3, we have 
+P(y=3|x=0)=0.48/0.68
+P(y=3|x=0)=0.7058824
